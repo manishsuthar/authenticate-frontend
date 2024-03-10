@@ -1,0 +1,62 @@
+.seat{
+    height: 30px;
+    width: 80px;
+    border: 1px solid #000;
+    margin: 10px;
+    position: relative;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+}
+
+.seat-inner{
+    height: 7px;
+    width: 14px;
+    border: 1px solid #000;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    transform: rotate(90deg);
+}
+
+.bus-layout{
+    width: min-content;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+.row-items{
+    display: flex;
+    min-height: 40px;
+}
+
+.bus-dack{
+    display: flex;
+}
+.last-seat .seat{
+    transform: rotate(90deg);
+    margin-top: 55px;
+}
+
+.bus-dack-1{
+    margin-top: 32px;
+}
+
+.selected{
+    background-color: aquamarine;
+}
+
+.booked{
+    background-color: gray;
+    pointer-events: none;
+    cursor: not-allowed !important;
+}
+
+.female-booked{
+    background-color: rgb(237, 96, 20);
+    pointer-events: none;
+    cursor: not-allowed !important;
+}
